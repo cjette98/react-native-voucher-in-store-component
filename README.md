@@ -11,11 +11,16 @@ npm install react-native-voucher-in-store-component
 ## Usage
 
 ```js
-import { multiply } from 'react-native-voucher-in-store-component';
-
-// ...
-
-const result = await multiply(3, 7);
+import { VoucherList } from 'react-native-voucher-in-store-component';
+<VoucherList
+  data={DummyData}
+  isFetching={false}
+  maxPerPage={10}
+  _onLoadMore={_onLoadMore}
+  access_token={access_token}
+  _onRedeem={onRedeem}
+  redeeming={false}
+/>
 ```
 
 ## Contributing
